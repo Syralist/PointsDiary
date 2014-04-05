@@ -28,9 +28,6 @@
         <string>Tag</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="2" column="0" colspan="3">
-         <widget class="QColumnView" name="columnView"/>
-        </item>
         <item row="0" column="0" colspan="3">
          <widget class="QLineEdit" name="lineEdit"/>
         </item>
@@ -53,6 +50,22 @@
            <number>1</number>
           </property>
          </widget>
+        </item>
+        <item row="3" column="0" colspan="3">
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="keyboardTracking">
+           <bool>false</bool>
+          </property>
+          <property name="displayFormat">
+           <string>dd.MM.yyyy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="QTableView" name="tableView"/>
         </item>
        </layout>
       </widget>
