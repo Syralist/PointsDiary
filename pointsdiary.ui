@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>PointsDiary</class>
- <widget class="QMainWindow" name="PointsDiary" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="PointsDiary">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
@@ -9,13 +10,68 @@
     <height>480</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>PointsDiary</string>
   </property>
-  <widget class="QWidget" name="centralWidget" />
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tag</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="2" column="0" colspan="3">
+         <widget class="QColumnView" name="columnView"/>
+        </item>
+        <item row="0" column="0" colspan="3">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Eintragen</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox">
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::PlusMinus</enum>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Woche</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Monat</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
